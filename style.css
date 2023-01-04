@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+:root{
+    --clr-primary-cyan:hsl(179, 62%, 43%);
+    --clr-primary-byellow:hsl(71, 73%, 54%);
+    --clr-neutral-lgray:hsl(204, 43%, 93%);
+    --clr-neutral-grayishBlue:hwb(217 60% 26%);
+    --fs-body:16px;
+    --ff-body:karla;
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: var(--clr-neutral-lgray);
+    font-family: var(--ff-body);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    max-width:37rem ;
+    border-radius: 0.5em;
+    overflow: hidden;
+}
+div{
+    padding: 2em;
+}
+div p{
+    margin-bottom: 1rem;
+}
+.top_section{
+    background-color: white;
+}
+.bottom_section{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.left_div{
+    background-color: var(--clr-primary-cyan);
+}
+.right_div{
+    background-color: var(--clr-neutral-grayishBlue);
+    overflow-wrap: break-word;
+}
+.top_head{
+    font-size: large;
+    font-weight: bolder;
+    color: var(--clr-primary-cyan);
+}
+.top_mid{
+    color: rgb(207, 207, 18);
+    font-weight:bold;
+}
+.top_content{
+    color:var(--clr-neutral-grayishBlue);
+    line-height: 1.5;
+}
+.left_heading{
+    color:var(--clr-neutral-lgray);
+    font-size: large;
+    font-weight: bold;
+}
+.rate{
+    font-size:x-large;
+    color: var(--clr-neutral-lgray);
+}
+.left_div span{
+    font-size: small;
+    color:rgba(226, 208, 208, 0.719)
+}
+.left_content{
+    color: var(--clr-neutral-lgray);
+    font-size: small;
+}
+.left_div button{
+    width: 100%;
+    padding: 0.4rem;
+    background-color: var(--clr-primary-byellow);
+    border: none;
+    color:white;
+    border-radius:5px;
+}
+.right_div{
+    color:var(--clr-neutral-lgray);
+    padding-right: 6em;
+    line-height: 1.5;
+}
+.right_heading{
+    font-weight: bolder;
+
+}
+.right_content{
+    font-size: small;
+}
+@media screen and (max-width:590px){
+    .bottom_section{
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
